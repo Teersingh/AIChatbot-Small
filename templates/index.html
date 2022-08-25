@@ -1,0 +1,46 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GeneralConAI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body><center>
+    <h1>Small ConAI</h1>
+    <form action="user">
+    {% csrf_token %}
+      <input type="text" name="userinput" placeholder="Hello there..."/>
+      
+    </form>
+   
+      
+  </br> <h3> Response:</br></br>{{Response}}</h3>
+
+    
+     <!-- <input type="text" x-webkit-speech value="{{Response}}"> -->
+     <!-- <input type="button" value="Save"><i class="b-agent-demo_input-microphone material-icons-extended" id="mic">Save</i> -->
+</center>
+
+  
+    <!-- <div class="container">
+      <div class=" page-header text-center">
+        <h2>conai</h2>
+      </div>
+
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3">
+        <ul class="list-group js-chat-log">
+        </ul>
+
+        <div class="'input-group input-group-lg">
+          <span class="input-group-btn">
+            <button class="btn btn-primary js-say">Save</button>
+          </span>
+        </div>
+      </div>
+    </div>
+    </div> -->
+</body>
+</html>
